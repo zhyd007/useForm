@@ -1,5 +1,5 @@
 {
-  "name": "@zhyd1997/use-form",
+  "name": "@zhyd1997/use-form-hooks",
   "author": "Yadong Zhang",
   "version": "0.0.1",
   "description": "useForm hooks written with Typescript.",
