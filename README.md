@@ -1,4 +1,5 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+![NPM](https://img.shields.io/npm/l/@zhyd1997/use-form-hooks?registry_uri=https%3A%2F%2Fregistry.npmjs.org%2F%40zhyd1997%252fuse-form-hooks)
 
 Demo: [CodeSandbox](https://codesandbox.io/s/blissful-browser-fop66?file=/src/components/BusinessForm.tsx)
 
