@@ -27,15 +27,12 @@ import { useForm, Form, Select, TextField } from "@zhyd1997/use-form";
 import type { SelectProps, TextFieldProps } from "@zhyd1997/use-form";
 
 function MyForm() {
-  const { values, errors, onChange, handleSubmit } =
-    useForm <
-    InitialFormState >
-    {
-      username: "",
-      email: "",
-      role: "",
-      password: "",
-    };
+  const { values, errors, onChange, handleSubmit } = useForm<InitialFormState>({
+    username: "",
+    email: "",
+    role: "",
+    password: ""
+  });
 
   const onSubmit = () => {
     alert(JSON.stringify(values));
