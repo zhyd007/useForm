@@ -37,7 +37,7 @@ function useForm(initialValues) {
     };
     const handleSubmit = (fn) => (evt) => {
         evt.preventDefault();
-        const invalidElements = evt.currentTarget.querySelectorAll(".form-input-ele:invalid");
+        const invalidElements = evt.currentTarget.querySelectorAll(":invalid:not(form):not(fieldset)");
         if (invalidElements.length !== 0) {
             for (let i = 0; i < invalidElements.length; i++) {
                 const ele = invalidElements[i];
@@ -47,6 +47,10 @@ function useForm(initialValues) {
             }
             invalidElements[0].focus();
             _showError(invalidElements[0]);
+        }
+        const isInvalid = evt.currentTarget.reportValidity() === false;
+        if (isInvalid) {
+            return;
         }
         // trigger custom callback fn.
         fn(evt);
