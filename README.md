@@ -23,8 +23,8 @@ Demo: [CodeSandbox](https://codesandbox.io/s/blissful-browser-fop66?file=/src/co
 
 ```jsx
 import React from "react";
-import { useForm, Form, Select, TextField } from "@zhyd1997/use-form";
-import type { SelectProps, TextFieldProps } from "@zhyd1997/use-form";
+import { useForm, Form, Select, TextField } from "@zhyd1997/use-form-hooks";
+import type { SelectProps, TextFieldProps } from "@zhyd1997/use-form-hooks";
 
 function MyForm() {
   const { values, errors, onChange, handleSubmit } = useForm<InitialFormState>({
