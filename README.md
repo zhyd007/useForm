@@ -2,6 +2,10 @@
 ![NPM](https://img.shields.io/npm/l/@zhyd1997/use-form-hooks)
 ![npm (scoped)](https://img.shields.io/npm/v/@zhyd1997/use-form-hooks)
 
+![npm](https://img.shields.io/npm/dw/@zhyd1997/use-form-hooks?style=for-the-badge)
+![npm](https://img.shields.io/npm/dm/@zhyd1997/use-form-hooks?style=for-the-badge)
+![npm](https://img.shields.io/npm/dt/@zhyd1997/use-form-hooks?style=for-the-badge)
+
 > Design useForm hooks and related components.
 
 Demo: [CodeSandbox](https://codesandbox.io/s/blissful-browser-fop66?file=/src/components/BusinessForm.tsx)
