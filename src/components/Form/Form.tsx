@@ -1,19 +1,17 @@
-import React, { FormEvent, forwardRef, ReactNode } from "react";
+import React, { FC, FormEvent, ReactNode } from "react";
 
-type Props = {
+type FormProps = {
   children: ReactNode;
   onSubmit: (evt: FormEvent<HTMLFormElement>) => void;
 };
 
-type Ref = HTMLFormElement;
-
 /**
  * Form component that uses [Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation).
  */
-export const Form = forwardRef<Ref, Props>((props, ref) => {
+export const Form: FC<FormProps> = ({ onSubmit, children }) => {
   return (
-    <form noValidate ref={ref} onSubmit={props.onSubmit}>
-      {props.children}
+    <form noValidate onSubmit={onSubmit}>
+      {children}
     </form>
   );
-});
+};

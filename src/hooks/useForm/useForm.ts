@@ -53,7 +53,7 @@ export function useForm<T>(initialValues: Generic<T>): ReturnType<T> {
   const handleSubmit = (fn: Function) => (evt: FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
     const invalidElements: NodeListOf<HTMLInputElement | HTMLSelectElement> =
-      evt.currentTarget.querySelectorAll(".form-input-ele:invalid");
+      evt.currentTarget.querySelectorAll(":invalid:not(form):not(fieldset)");
 
     if (invalidElements.length !== 0) {
       for (let i = 0; i < invalidElements.length; i++) {
@@ -65,6 +65,12 @@ export function useForm<T>(initialValues: Generic<T>): ReturnType<T> {
 
       invalidElements[0].focus();
       _showError(invalidElements[0]);
+    }
+
+    const isInvalid = evt.currentTarget.reportValidity() === false;
+
+    if (isInvalid) {
+      return;
     }
 
     // trigger custom callback fn.
