@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { FC, FormEvent, ReactNode } from "react";
 declare type FormProps = {
     children: ReactNode;
