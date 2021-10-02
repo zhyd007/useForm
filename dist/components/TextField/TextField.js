@@ -9,6 +9,10 @@ exports.TextField = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _react2 = require("@emotion/react");
+
+var _textField = require("./textField.style");
+
 var _excluded = ["label", "error", "helperText"];
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -52,20 +56,20 @@ var TextField = function TextField(_ref) {
       setShowTrailing(true);
     }
   }, [value, showTrailing]);
-  return /*#__PURE__*/_react["default"].createElement("label", {
-    className: "text-field-outlined"
-  }, /*#__PURE__*/_react["default"].createElement("input", _extends({
+  return (0, _react2.jsx)("label", {
+    css: _textField.textFieldStyle
+  }, (0, _react2.jsx)("input", _extends({
     className: "form-input-ele text-field_input".concat(error && " form-input_invalid"),
     "aria-labelledby": "text-field_label"
-  }, rest)), /*#__PURE__*/_react["default"].createElement("span", {
+  }, rest)), (0, _react2.jsx)("span", {
     className: "text-field_floating-label".concat((value || error) && " text-field_floating-label-outlined").concat(error && " text-field_floating-label-invalid"),
     id: "text-field_label"
-  }, label), /*#__PURE__*/_react["default"].createElement("div", {
+  }, label), (0, _react2.jsx)("div", {
     className: "text-field_msg"
-  }, error && /*#__PURE__*/_react["default"].createElement("span", {
+  }, error && (0, _react2.jsx)("span", {
     className: "text-field_error-msg",
     "aria-live": "polite"
-  }, error), helperText && /*#__PURE__*/_react["default"].createElement("small", {
+  }, error), helperText && (0, _react2.jsx)("small", {
     className: "text-field_helper-msg"
   }, helperText)));
 };

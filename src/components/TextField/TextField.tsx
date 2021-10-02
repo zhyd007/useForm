@@ -1,4 +1,7 @@
+/** @jsx jsx */
 import React, { ChangeEvent, FC, useEffect, useState } from "react";
+import { jsx } from "@emotion/react";
+import { textFieldStyle } from "./textField.style";
 
 export type TextFieldProps = {
   /** if the field is required */
@@ -39,7 +42,7 @@ export const TextField: FC<TextFieldProps> = ({
   }, [value, showTrailing]);
 
   return (
-    <label className="text-field-outlined">
+    <label css={textFieldStyle}>
       <input
         className={`form-input-ele text-field_input${
           error && " form-input_invalid"

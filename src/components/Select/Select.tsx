@@ -1,5 +1,8 @@
+/** @jsx jsx */
 import React, { ChangeEvent, FC } from "react";
+import { jsx } from "@emotion/react";
 import type { Options } from "./types";
+import { selectStyle } from "./select.style";
 
 export type SelectProps = {
   /** if the field is required */
@@ -20,8 +23,9 @@ export type SelectProps = {
 
 export const Select: FC<SelectProps> = ({ label, options, error, ...rest }) => {
   return (
-    <>
+    <label>
       <select
+        css={selectStyle}
         className={`form-input-ele${error && " form-input_invalid"}`}
         aria-label={label}
         {...rest}
@@ -39,6 +43,6 @@ export const Select: FC<SelectProps> = ({ label, options, error, ...rest }) => {
           </span>
         )}
       </div>
-    </>
+    </label>
   );
 };
