@@ -22,7 +22,7 @@ Demo: [CodeSandbox](https://codesandbox.io/s/blissful-browser-fop66?file=/src/co
 # Usage
 
 ```jsx
-import React, { FormEvent, useRef } from "react";
+import React from "react";
 import { useForm, Form, Select, TextField } from "@zhyd1997/use-form";
 import type { SelectProps, TextFieldProps } from "@zhyd1997/use-form";
 
@@ -37,19 +37,13 @@ function MyForm() {
       password: "",
     };
 
-  const ref = (useRef < HTMLFormElement) | (null > null);
-
-  const onSubmit = (evt: FormEvent) => {
-    const isValid = ref.current?.reportValidity();
-    if (!isValid) {
-      return;
-    }
+  const onSubmit = () => {
     alert(JSON.stringify(values));
   };
 
   return (
     <div>
-      <Form ref={ref} onSubmit={handleSubmit(onSubmit)}>
+      <Form onSubmit={handleSubmit(onSubmit)}>
         <TextField {...formState.username} onChange={onChange} />
         <TextField {...formState.email} onChange={onChange} />
         <Select {...formState.select} onChange={onChange} />
