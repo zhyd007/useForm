@@ -7,6 +7,10 @@ exports.Select = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _react2 = require("@emotion/react");
+
+var _select = require("./select.style");
+
 var _excluded = ["label", "options", "error"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -23,17 +27,18 @@ var Select = function Select(_ref) {
       error = _ref.error,
       rest = _objectWithoutProperties(_ref, _excluded);
 
-  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("select", _extends({
+  return (0, _react2.jsx)("label", null, (0, _react2.jsx)("select", _extends({
+    css: _select.selectStyle,
     className: "form-input-ele".concat(error && " form-input_invalid"),
     "aria-label": label
   }, rest), options.map(function (opt) {
-    return /*#__PURE__*/_react["default"].createElement("option", {
+    return (0, _react2.jsx)("option", {
       value: opt.value,
       key: opt.option
     }, opt.option);
-  })), /*#__PURE__*/_react["default"].createElement("div", {
+  })), (0, _react2.jsx)("div", {
     className: "text-field_msg"
-  }, error && /*#__PURE__*/_react["default"].createElement("span", {
+  }, error && (0, _react2.jsx)("span", {
     className: "text-field_error-msg",
     "aria-live": "polite"
   }, error)));

@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { ChangeEvent, FC } from "react";
 import type { Options } from "./types";
 export declare type SelectProps = {
