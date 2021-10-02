@@ -4,6 +4,14 @@
   "version": "0.0.3",
   "description": "useForm hooks written with Typescript.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhyd1997/useForm.git"
+  },
+  "keywords": [
+    "react",
+    "react-hooks"
+  ],
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
