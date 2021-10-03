@@ -7,6 +7,7 @@ type ReturnType<T> = {
   errors: Generic<T>;
   onChange: (evt: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
   /** used for form elements but not submit button. */
+  // eslint-disable-next-line @typescript-eslint/ban-types
   handleSubmit: (fn: Function) => (evt: FormEvent<HTMLFormElement>) => void;
 };
 
@@ -50,6 +51,7 @@ export function useForm<T>(initialValues: Generic<T>): ReturnType<T> {
     }
   };
 
+  // eslint-disable-next-line @typescript-eslint/ban-types
   const handleSubmit = (fn: Function) => (evt: FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
     const invalidElements: NodeListOf<HTMLInputElement | HTMLSelectElement> =
