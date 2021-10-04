@@ -1,24 +1,33 @@
 {
   "name": "@zhyd1997/use-form-hooks",
   "author": "Yadong Zhang",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "useForm hooks written with Typescript.",
+  "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/zhyd1997/useForm.git"
   },
+  "bugs": {
+    "url": "https://github.com/zhyd1997/useForm/issues"
+  },
+  "homepage": "https://github.com/zhyd1997/useForm#readme",
   "keywords": [
     "react",
     "react-hooks",
     "forms",
     "form-validation"
   ],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "babel --extensions \".ts,.tsx\" src -d dist && tsc",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
