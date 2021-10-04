@@ -1,7 +1,7 @@
 {
   "name": "@zhyd1997/use-form-hooks",
   "author": "Yadong Zhang",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "useForm hooks written with Typescript.",
   "private": false,
   "license": "MIT",
@@ -19,7 +19,9 @@
     "forms",
     "form-validation"
   ],
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
