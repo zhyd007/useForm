@@ -60,9 +60,9 @@ export function useForm<T>(initialValues: Generic<T>): ReturnType<T> {
     if (invalidElements.length !== 0) {
       for (let i = 0; i < invalidElements.length; i++) {
         const ele = invalidElements[i];
-        ele.addEventListener("invalid", (evt: any) => {
+        ele.addEventListener("invalid", ((evt: CustomEvent) => {
           evt.preventDefault(); // disable default validation messages and styles of input/select elements here.
-        });
+        }) as EventListener);
       }
 
       invalidElements[0].focus();
