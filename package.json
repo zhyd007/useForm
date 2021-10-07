@@ -24,6 +24,9 @@
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "release": {
+    "branches": ["main"]
+  },
   "scripts": {
     "build": "babel --extensions \".ts,.tsx\" src -d dist --ignore '**/*.test.ts' && tsc",
     "lint": "eslint .",
