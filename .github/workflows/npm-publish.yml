@@ -42,7 +42,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: |
+          cat ./.npmrc
+          npx semantic-release
 
   publish-gpr:
     needs: [build, publish-npm]
