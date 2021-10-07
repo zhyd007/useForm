@@ -51,7 +51,12 @@ type FormProps = {
  */
 export const Form: FC<FormProps> = ({ onSubmit, children }) => {
   return (
-    <form noValidate css={formStyle} onSubmit={onSubmit}>
+    <form
+      noValidate
+      css={formStyle}
+      onSubmit={onSubmit}
+      data-testid="simple-form"
+    >
       {children}
     </form>
   );

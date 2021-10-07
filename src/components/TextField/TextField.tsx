@@ -48,6 +48,7 @@ export const TextField: FC<TextFieldProps> = ({
           error && " form-input_invalid"
         }`}
         aria-labelledby="text-field_label"
+        data-testid="text-field"
         {...rest}
       />
       {/* this className is hard to handle by react state. */}
@@ -61,7 +62,11 @@ export const TextField: FC<TextFieldProps> = ({
       </span>
       <div className="text-field_msg">
         {error && (
-          <span className="text-field_error-msg" aria-live="polite">
+          <span
+            className="text-field_error-msg"
+            aria-live="polite"
+            data-testid="text-field-error"
+          >
             {error}
           </span>
         )}

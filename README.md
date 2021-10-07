@@ -1,6 +1,8 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ![NPM](https://img.shields.io/npm/l/@zhyd1997/use-form-hooks)
 ![npm (scoped)](https://img.shields.io/npm/v/@zhyd1997/use-form-hooks)
+[![codecov](https://codecov.io/gh/zhyd1997/useForm/branch/main/graph/badge.svg?token=8VLNN86IK0)](https://codecov.io/gh/zhyd1997/useForm)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 ![npm](https://img.shields.io/npm/dw/@zhyd1997/use-form-hooks?style=for-the-badge)
 ![npm](https://img.shields.io/npm/dm/@zhyd1997/use-form-hooks?style=for-the-badge)
