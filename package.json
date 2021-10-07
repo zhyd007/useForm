@@ -27,6 +27,9 @@
   "release": {
     "branches": ["main"]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "babel --extensions \".ts,.tsx\" src -d dist --ignore '**/*.test.ts' && tsc",
     "lint": "eslint .",
