@@ -41,11 +41,11 @@ jobs:
       - name: Release new version to NPM
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          NPM_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
         run: npx semantic-release
 
   publish-gpr:
-    needs: build
+    needs: [build, publish-npm]
     runs-on: ubuntu-latest
     permissions:
       contents: read
