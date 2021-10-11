@@ -34,7 +34,7 @@ export function useForm<T>(initialValues: Generic<T>): ReturnType<T> {
     } else if (patternMismatch) {
       setErrors({
         ...errors,
-        [target.name]: "Please enter a valid email address",
+        [target.name]: "pattern mismatch",
       });
     } else if (tooShort) {
       setErrors({ ...errors, [target.name]: "too short" });
