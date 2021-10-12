@@ -85,7 +85,7 @@ export function App() {
         <Select {...formState.select} onChange={onChange} />
         <TextField {...formState.password} onChange={onChange} />
         <button type="submit" className="cta-button">
-          Next
+          Submit
         </button>
       </Form>
     </div>
