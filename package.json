@@ -27,6 +27,7 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "postbuild": "rm -rf dist/setupTests.* dist/hooks/useForm/useForm.test.*",
+    "build:examples": "npx webpack --config webpack.config.js",
     "build": "babel --extensions \".ts,.tsx\" src -d dist --ignore '**/*.test.ts' && tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
