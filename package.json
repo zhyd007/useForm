@@ -32,8 +32,8 @@
     "lint:fix": "eslint . --fix",
     "test": "jest --runInBand",
     "prepare": "husky install",
-    "prepare:examples": "yarn --cwd ./examples install",
-    "start:examples": "yarn --cwd ./examples start",
+    "prepare:examples": "yarn --cwd ./examples/cra-with-ts install",
+    "start:examples": "yarn --cwd ./examples/cra-with-ts start",
     "build:examples": "yarn build && yarn prepare:examples && yarn start:examples"
   },
   "dependencies": {
