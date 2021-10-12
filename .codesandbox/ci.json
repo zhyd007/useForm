@@ -1,3 +1,5 @@
 {
+  "buildCommand": "build",
+  "sandboxes": ["/examples/cra-with-ts"],
   "node": "14"
 }
