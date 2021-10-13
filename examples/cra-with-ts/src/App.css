@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.cta-button {
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-transform: capitalize;
+  background-color: var(--bg-color-grey);
+  color: var(--text-color-grey-secondary);
+  transition: background-color 0.2s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 50em) {
+  .cta-button {
+    height: 4.17em;
+    margin-top: 2.5em;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+form:valid > .cta-button {
+  background-color: var(--main-color-blue);
+  color: var(--text-color-white);
+  cursor: pointer;
+}
+form:valid > .cta-button:hover {
+  background-color: #115293;
 }
