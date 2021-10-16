@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES6",
+    "module": "es6",
+    "target": "es5",
     "declaration": true,
     "outDir": "dist",
     "jsx": "react",
@@ -10,7 +10,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "emitDeclarationOnly": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "moduleResolution": "Node"
   },
   "include": ["src"],
   "exclude": ["node_modules"]
