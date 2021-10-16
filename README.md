@@ -60,3 +60,9 @@ function MyForm() {
   );
 }
 ```
+
+# Development
+When publishing a new release, you must at most do the 2 things below:
+
+1. update `version` field in `package.json`.
+2. update the version of package used in `examples`.
