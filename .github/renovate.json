@@ -1,4 +1,5 @@
 {
+  "ignorePaths": ["examples/**"],
   "extends": [
     "config:base"
   ]
