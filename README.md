@@ -21,9 +21,9 @@ Demo: [CodeSandbox](https://codesandbox.io/s/blissful-browser-fop66?file=/src/co
 
 ```bash
   # using npm
-  npm install @zhyd1997/use-form
+  npm install @zhyd1997/use-form-hooks
   # or using yarn
-  yarn add @zhyd1997/use-form
+  yarn add @zhyd1997/use-form-hooks
 ```
 
 # Usage
