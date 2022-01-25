@@ -34,7 +34,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@emotion/css": "^11.5.0",
+    "@emotion/css": "^11.7.1",
     "@emotion/react": "^11.5.0"
   },
   "devDependencies": {
