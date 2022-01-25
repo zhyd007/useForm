@@ -1,7 +1,7 @@
 {
   "name": "@zhyd1997/use-form-hooks",
   "author": "Yadong Zhang",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "description": "useForm hooks written with Typescript.",
   "private": false,
   "license": "MIT",
